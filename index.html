@@ -10,35 +10,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>$TROLL - The Ultimate Meme Coin</title>
 <style>
-  
-    ul {
-      list-style: none; /* Removes bullets */
-      padding: 0; /* Removes extra padding */
-      margin: 0; /* Removes default margin */
-    }
-
-  
-    ul li {
-      display: flex; /* Optional: Aligns items horizontally if needed */
-      align-items: center; /* Centers icons/emojis vertically with text */
-    }
-    /* Remove bullets from <ul> */
-      ul {
-        list-style: none; /* Disables bullets */
-        padding-left: 100px; /* Removes default padding */
-        margin: 0; /* Removes default margin */
-        text-align: center;
-      }
-    
-      /* Style individual list items */
-      ul li {
-        margin-bottom: 10px; /* Adds spacing between items */
-        display: flex; /* Aligns emoji with text in a row */
-        align-items: center; /* Vertically centers emoji and text */
-        font-size: 20px; /* Makes the text easy to read */
-      }
   body {
-    font-family: 'Bangers', cursive;; /* For paragraphs and general text */
+    font-family: 'Bangers', cursive;
     letter-spacing: 2px;
     margin: 0;
     padding: 0;
@@ -48,7 +21,7 @@
   }
 
   h1, h2 {
-    font-family: 'Bangers', cursive; /* For headings */
+    font-family: 'Bangers', cursive;
     letter-spacing: 2px;
     margin: 20px 0;
   }
@@ -60,94 +33,115 @@
     letter-spacing: 2px;
   }
 
-    header {
-      background: #000;
-      color: white;
-      padding: 20px 0;
-    }
-    header img {
-      max-width: 300px;
-      margin-bottom: 10px;
-    }
-    section {
-      padding: 20px;
-    }
-    a {
-      color: #000;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .socials, .roadmap, .tokenomics {
-      margin: 20px 0;
-    }
-
-.footer {
-    background: #000; /* Restore the black background */
-    color: white; /* Ensure text is visible */
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
+  header {
+    background: #000;
+    color: white;
+    padding: 20px 0;
   }
 
-  footer a:hover {
-    text-decoration: underline; /* Add hover effect to links */
+  header img {
+    max-width: 300px;
+    margin-bottom: 10px;
   }
+
+  section {
+    padding: 20px;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .socials, .roadmap, .tokenomics {
+    margin: 20px 0;
+  }
+
   footer {
-    background: #000; /* Restore the black background */
-    color: white; /* Ensure text is visible */
+    background: #000;
+    color: white;
     padding: 10px;
     text-align: center;
     margin-top: 20px;
   }
 
   footer a:hover {
-    text-decoration: underline; /* Add hover effect to links */
+    text-decoration: underline;
   }
-    .socials .button {
-      display: inline-block;
-      margin: 5px;
-      padding: 10px 15px;
-      background: #fff;
-      /*border: 1px solid #333;*/
-      border-radius: 10px;
-      color: #000;
-      font-size: 40px;
-      text-decoration: none;
-      font-weight: bold;
+
+  /* ✅ Fixed UL Styling */
+  ul {
+    list-style: none;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 768px) {
+    ul {
+      padding-left: 40px;
     }
-    .socials .button:hover {
-      background: #333;
-      color: #fff;
-    }
-    .socials .button i {
-      margin-right: 5px;
-    }
-    .socials a {
-      display: inline-block;
-      margin: 20px;
-      text-decoration: none;
-      transition: transform 0.2s ease;
-    }
-  
-    .socials a i, /* Font Awesome icons */
-    .socials a img { /* Solscan logo */
-      width: 40px; /* Set consistent width */
-      height: 40px; /* Set consistent height */
-      display: inline-block;
-    }
-  
-    .socials a i {
-      font-size: 40px; /* Increase Font Awesome icon size */
-      line-height: 40px; /* Ensure vertical alignment matches */
-    }
-  
-    .socials a:hover i,
-    .socials a:hover img {
-      transform: scale(1.1); /* Add hover zoom effect */
-    }
-  </style>
+  }
+
+  .socials .button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 10px;
+    color: #000;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .socials .button:hover {
+    background: #333;
+    color: #fff;
+  }
+
+  .socials .button i {
+    margin-right: 5px;
+  }
+
+  .socials a {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .socials a i,
+  .socials a img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
+
+  .socials a i {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .socials a:hover i,
+  .socials a:hover img {
+    transform: scale(1.1);
+  }
+</style>
+
 </head>
 <body>
   
@@ -223,7 +217,7 @@
   </footer>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
-  google.charts.load('current', {'packages'🙁'corechart']});
+  google.charts.load('current', {'packages', 'corechart']});
   google.charts.setOnLoadCallback(drawChart);
 
   function drawChart() {

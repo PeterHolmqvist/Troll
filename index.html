@@ -1,199 +1,230 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">  
 <head>
   <script defer data-domain="trollsonsol.com" src="https://plausible.io/js/script.js"></script>
-<link rel="icon" href="images/trollface.png" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/trollface.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$TROLL - The Ultimate Meme Coin</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>$TROLL - The Ultimate Meme Coin</title>
-<style>
-  body {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 2px;
-    margin: 0;
-    padding: 0;
-    background: white;
-    text-align: center;
-    color: #000;
-  }
-
-  h1, h2 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 2px;
-    margin: 20px 0;
-  }
-
-  p {
-    font-family: 'Bangers', cursive;
-    font-size: 16px;
-    line-height: 1.8;
-    letter-spacing: 2px;
-  }
-
-  header {
-    background: #000;
-    color: white;
-    padding: 20px 0;
-  }
-
-  header img {
-    max-width: 300px;
-    margin-bottom: 10px;
-  }
-
-  section {
-    padding: 20px;
-  }
-
-  a {
-    color: #000;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  .socials, .roadmap, .tokenomics {
-    margin: 20px 0;
-  }
-
-  footer {
-    background: #000;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  footer a:hover {
-    text-decoration: underline;
-  }
-
-  /* ✅ Fixed UL Styling */
-  ul {
-    list-style: none;
-    padding: 0 15px;
-    margin: 0 auto;
-    max-width: 600px;
-    text-align: left;
-  }
-
-  ul li {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  @media (min-width: 768px) {
-    ul {
-      padding-left: 40px;
+  <style>
+    body {
+      font-family: 'Bangers', cursive;
+      letter-spacing: 2px;
+      margin: 0;
+      padding: 0;
+      background: white;
+      text-align: center;
+      color: #000;
     }
-  }
 
-  .socials .button {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 15px;
-    background: #fff;
-    border-radius: 10px;
-    color: #000;
-    font-size: 40px;
-    text-decoration: none;
-    font-weight: bold;
-  }
+    h1, h2 {
+      font-family: 'Bangers', cursive;
+      letter-spacing: 2px;
+      margin: 20px 0;
+    }
 
-  .socials .button:hover {
-    background: #333;
-    color: #fff;
-  }
+    p {
+      font-family: 'Bangers', cursive;
+      font-size: 16px;
+      line-height: 1.8;
+      letter-spacing: 2px;
+    }
 
-  .socials .button i {
-    margin-right: 5px;
-  }
+    header {
+      background: #000;
+      color: white;
+      padding: 40px 20px;
+      position: relative;
+    }
 
-  .socials a {
-    display: inline-block;
-    margin: 20px;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-  }
+    header img {
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
 
-  .socials a i,
-  .socials a img {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-  }
+    .cta-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
 
-  .socials a i {
-    font-size: 40px;
-    line-height: 40px;
-  }
+    .cta-buttons button {
+      font-family: 'Bangers', cursive;
+      padding: 10px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
 
-  .socials a:hover i,
-  .socials a:hover img {
-    transform: scale(1.1);
-  }
-</style>
+    .buy-button {
+      background: #00ff00;
+      color: #000;
+    }
 
+    .buy-button:hover {
+      background: #00cc00;
+    }
+
+    .ca-button {
+      background: #fff;
+      color: #000;
+    }
+
+    .ca-button:hover {
+      background: #ddd;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .socials, .roadmap, .tokenomics {
+      margin: 20px 0;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0 15px;
+      margin: 0 auto;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    ul li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 768px) {
+      ul {
+        padding-left: 40px;
+      }
+    }
+
+    .socials .button {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      background: #fff;
+      border-radius: 10px;
+      color: #000;
+      font-size: 40px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .socials .button:hover {
+      background: #333;
+      color: #fff;
+    }
+
+    .socials .button i {
+      margin-right: 5px;
+    }
+
+    .socials a {
+      display: inline-block;
+      margin: 20px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .socials a i,
+    .socials a img {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+    }
+
+    .socials a i {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    .socials a:hover i,
+    .socials a:hover img {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
-  
 
-    <header style="background: #000; color: #fff; padding: 40px; text-align: center;">
-      <img src="images/trollfaceblack.png" alt="Trollface">
-      <h1>Welcome to $TROLL on Solana Meme Season</h1>
-      <h1></h1>
-      <h3>Claiming to be a degen without hodling the #1 OG internet meme $TROLLFACE? Ape in or GFTO!</h3>
-      <h3>$TROLL on Solana — $100B MC Destiny 🚀</h3>
-    </header>
-  <section Style="padding: 0;">
+  <header>
+    <div class="cta-buttons">
+      <button class="buy-button" onclick="window.open('https://pump.fun/', '_blank')">BUY</button>
+      <button class="ca-button" onclick="copyCA()">So1a...FGH</button>
+    </div>
+    <img src="images/trollfaceblack.png" alt="Trollface">
+    <h1>Welcome to $TROLL on Solana Meme Season</h1>
+    <h3>Claiming to be a degen without hodling the #1 OG internet meme $TROLLFACE? Ape in or GFTO!</h3>
+    <h3>$TROLL on Solana — $100B MC Destiny 🚀</h3>
+  </header>
+
+  <section style="padding: 0;">
     <div style="background: #fff; color: #000; padding: 20px;">
-      <!-- Section Content -->
-       <img src="/images/Umadbro.jpg" width="300px;", padding-bottom: 20px;>
+      <img src="images/Umadbro.jpg" style="width: 300px; padding-bottom: 20px;">
     </div>
-    <div style="background: #000; color: #fff; padding: 20px;">
-      <!-- Section Content -->
+
+    <div id="roadmap-phase-1" style="background: #000; color: #fff; padding: 20px;">
+      <h2>🚀 Phase 1: The Launch</h2>
+      <ul>
+        <li>🌐 Launch $TROLL on Pump.fun</li>
+        <li>👥 Build initial community via Telegram and Twitter</li>
+        <li>📢 Listings on CoinMarketCap and CoinGecko</li>
+      </ul>
     </div>
-    <!-- Phase 1 -->
-<div id="roadmap-phase-1" style="background: #000; color: #fff; padding: 20px;">
-  <h2>🚀 Phase 1: The Launch</h2>
-  <ul>
-    <li>🌐 Launch $TROLL on Pump.fun</li>
-    <li>👥 Build initial community via Telegram and Twitter</li>
-    <li>📢 Listings on CoinMarketCap and CoinGecko</li>
-  </ul>
-</div>
 
-<!-- Phase 2 -->
-<div id="roadmap-phase-2" style="background: #fff; color: #000; padding: 20px; text-align: center;">
-  <h2>🔥 Phase 2: Community Growth</h2>
-  <ul>
-    <li>🎁 Airdrop campaigns for active community members</li>
-    <li>🤝 Minting of NFTs</li>
-    <li>📈 Listings on major DEX</li>
-  </ul>
-</div>
+    <div id="roadmap-phase-2" style="background: #fff; color: #000; padding: 20px; text-align: center;">
+      <h2>🔥 Phase 2: Community Growth</h2>
+      <ul>
+        <li>🎁 Airdrop campaigns for active community members</li>
+        <li>🤝 Minting of NFTs</li>
+        <li>📈 Listings on major DEX</li>
+      </ul>
+    </div>
 
-<!-- Phase 3 -->
-<div id="roadmap-phase-3" style="background: #000; color: #fff; padding: 20px;">
-  <h2>🎉 Phase 3: Mooning</h2>
-  <ul>
-    <li>🪙 TROLL DEX </li>
-    <li>🚀 Partnering with other meme projects</li>
-    <li>🌌 $TROLL to $100B MC</li>
-  </ul>
-</div>
+    <div id="roadmap-phase-3" style="background: #000; color: #fff; padding: 20px;">
+      <h2>🎉 Phase 3: Mooning</h2>
+      <ul>
+        <li>🪙 TROLL DEX</li>
+        <li>🚀 Partnering with other meme projects</li>
+        <li>🌌 $TROLL to $100B MC</li>
+      </ul>
+    </div>
+
     <div id="tokenomics" style="background: #fff; color: #000; padding: 20px;">
-    <img src="https://c.tenor.com/buKQt94Dy60AAAAd/tenor.gif" alt="dancing" width="300px">
+      <h2 style="font-family: 'Bangers', cursive;">💰 Tokenomics</h2>
+      <div id="tokenomics-chart" style="width: 100%; max-width: 500px; height: 300px; margin: 0 auto;"></div>
+      <img src="https://c.tenor.com/buKQt94Dy60AAAAd/tenor.gif" alt="dancing" width="300">
     </div>
+
     <div class="socials">
       <h2>Join the Community</h2>
       <p>
@@ -201,12 +232,12 @@
           <i class="fab fa-telegram"></i>
         </a>
         <a href="https://x.com/trollsonsolana" target="_blank">
-          <img src="/images/xlogo.png">
+          <img src="images/xlogo.png">
         </a>
         <a href="https://pump.fun/coin/CYANXouNZ9jGkw2PvWJ2Q5AnKNeoUFQD1JhNdE2Ypump" target="_blank">
-          <img src="/images/dexs.png">
+          <img src="images/dexs.png">
         </a>
-        <a href="https://solscan.io/address/yourTokenAddress" target="_blank">
+        <a href="https://solscan.io/address/So1a1234abcdEFGH" target="_blank">
           <img src="https://solscan.io/favicon.ico">
         </a>
       </p>
@@ -216,30 +247,38 @@
   <footer class="footer">
     <p>&copy; 2025 $TROLL. All Rights Reserved.</p>
   </footer>
+
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load('current', {'packages', 'corechart']});
-  google.charts.setOnLoadCallback(drawChart);
+  <script type="text/javascript">
+    google.charts.load('current', {'packages': ['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
 
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['Allocation', 'Percentage'],
-      ['Community', 80],
-      ['Marketing', 10],
-      ['Liquidity', 10]
-    ]);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Allocation', 'Percentage'],
+        ['Community', 80],
+        ['Marketing', 10],
+        ['Liquidity', 10]
+      ]);
 
-    var options = {
-      title: 'Tokenomics Overview',
-      backgroundColor: '#222',
-      titleTextStyle: { color: 'white', fontName: 'Bangers', fontSize: 20 },
-      legendTextStyle: { color: 'white' },
-      pieSliceTextStyle: { color: 'black' },
-    };
+      var options = {
+        title: 'Tokenomics Overview',
+        backgroundColor: '#222',
+        titleTextStyle: { color: 'white', fontName: 'Bangers', fontSize: 20 },
+        legendTextStyle: { color: 'white' },
+        pieSliceTextStyle: { color: 'black' },
+      };
 
-    var chart = new google.visualization.PieChart(document.getElementById('tokenomics-chart'));
-    chart.draw(data, options);
-  }
-</script>
+      var chart = new google.visualization.PieChart(document.getElementById('tokenomics-chart'));
+      chart.draw(data, options);
+    }
+
+    function copyCA() {
+      const ca = "So1a1234abcdEFGH";
+      navigator.clipboard.writeText(ca).then(() => {
+        alert("Contract address copied to clipboard!");
+      });
+    }
+  </script>
 </body>
 </html>
